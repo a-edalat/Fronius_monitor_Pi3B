@@ -5,13 +5,14 @@ import csv
 import os
 from os.path import exists
 from private import inverter_path
+from private import pi_path
 import sys
 
 # api call
 inverter_url = inverter_path
 
 # storing files
-file_path = r'/home/pi/projects/solarPanels_monitoring/storage'
+file_path = pi_path
 
 # Initialising the values, if there is an error, these would be reported.
 PAC = 'Nan'  #Eenrgy generated @ this moment
